@@ -1,0 +1,279 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Main website */
+body {
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #080808;
+    border-bottom: 1px solid #292929;
+}
+
+/* Logo */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f5bd43;
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5bd43;
+}
+
+/* Navigation button */
+.nav-button {
+    color: #050505;
+    background: #f5bd43;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 7%;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            #292015 0%,
+            #080808 45%,
+            #050505 75%
+        );
+}
+
+/* Text area */
+.hero-content {
+    flex: 1;
+    max-width: 560px;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: #f5bd43;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #f5bd43;
+}
+
+/* Description */
+.description {
+    color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #f5bd43;
+    color: #050505;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    color: white;
+    border: 1px solid white;
+}
+
+.secondary-button:hover {
+    background: white;
+    color: black;
+}
+
+/* Lion image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    -webkit-mask-image:
+        linear-gradient(to right, transparent, black 20%);
+    mask-image:
+        linear-gradient(to right, transparent, black 20%);
+}
+
+/* Other sections */
+.section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    color: #f5bd43;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #cccccc;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    flex: 1 1 220px;
+    max-width: 320px;
+    padding: 30px;
+    background: #111111;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #f5bd43;
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #f5bd43;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080808;
+    color: #999999;
+    border-top: 1px solid #292929;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-button {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 450px;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+}
