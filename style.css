@@ -1,12 +1,9 @@
-/* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-/* Main website */
 body {
     font-family: Arial, sans-serif;
     background: #050505;
@@ -52,7 +49,6 @@ nav a:hover {
     color: #f5bd43;
 }
 
-/* Navigation button */
 .nav-button {
     color: #050505;
     background: #f5bd43;
@@ -62,7 +58,6 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* Hero section */
 .hero {
     min-height: 600px;
     display: flex;
@@ -80,7 +75,6 @@ nav a:hover {
         );
 }
 
-/* Text area */
 .hero-content {
     flex: 1;
     max-width: 560px;
