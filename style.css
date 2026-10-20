@@ -389,3 +389,48 @@ button:hover {
 .form-feedback.success {
     color: #256029;
 }
+footer {
+    padding: 24px 16px;
+    background-color: #25213a;
+    color: #fff;
+}
+
+footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #bdb3ff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
