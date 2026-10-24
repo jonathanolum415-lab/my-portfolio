@@ -211,14 +211,14 @@ nav a:hover {
     line-height: 1.2;
 }
 
-.section > p {
+.section>p {
     max-width: 680px;
     margin: 0 auto 22px;
     color: var(--muted);
 }
 
-.section > h2,
-.section > p {
+.section>h2,
+.section>p {
     text-align: center;
 }
 
@@ -403,7 +403,7 @@ form {
     min-width: 0;
 }
 
-.contact-info-item > span {
+.contact-info-item>span {
     display: block;
     margin-bottom: 4px;
     color: var(--muted);
@@ -413,15 +413,15 @@ form {
     text-transform: uppercase;
 }
 
-.contact-info-item > a,
-.contact-info-item > p {
+.contact-info-item>a,
+.contact-info-item>p {
     overflow-wrap: anywhere;
     color: var(--text);
     font-weight: 600;
     text-decoration: none;
 }
 
-.contact-info-item > a:hover {
+.contact-info-item>a:hover {
     color: var(--accent);
 }
 
@@ -559,6 +559,7 @@ footer p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
